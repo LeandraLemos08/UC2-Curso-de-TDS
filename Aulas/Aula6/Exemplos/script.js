@@ -30,4 +30,3 @@ console.log (resultadoSimples)
 
 resultadoSimples /= 50
 console.log (resultadoSimples)
-
