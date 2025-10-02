@@ -58,8 +58,26 @@ console.log (typeof (nome), typeof (idade))
 // Foi impresso para descobrir o valor da variavel
 nome = prompt ("Qual seu nome?")
 idade = prompt ("Qual sua idade?")
+console.log (typeof (nome), typeof (idade))
+// Um nome seria do tipo string e uma idade será tipo string.
+console.log ("Olá `nome`, você tem `idade` anos")
 
+// 2- a e b
+let roupaAzul = Sim
+let calcadoPreto = Sim
+let boneCinza = Não
 
+console.log ("Você está usando uma roupa azul hoje?", roupaAzul)
+console.log ("Você está usando calçado preto hoje?", calcadoPreto)
+console.log ("Você está usando boné cinza hoje?", boneCinza)
 
+// 3-
 
+let a1 = 10
+let bb = 25
+let c2 = a2
+bb = c2
+a2 = c2
 
+/* O desafio opcional não será realizado, devido a esta ser uma aula perdida 
+e precisar seguir em frente com as aulas. */
