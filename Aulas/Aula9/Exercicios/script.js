@@ -13,16 +13,16 @@ console.log(soma)
 // EXERC. DE FIX. DE ESCRITA DE CÒDIGO>
 // 1 -
 
-let idadeUsuario = prompt("Quantos anos voce tem?")
-let melhorAmigo = prompt("Quantos anos tem seu melhor amigo(a)?")
+let idadeUsuario =Number(prompt("Quantos anos voce tem?"))
+let melhorAmigo =Number(prompt("Quantos anos tem seu melhor amigo(a)?"))
 let menorOuMaior = idadeUsuario > melhorAmigo
 console.log(menorOuMaior)
-let diferenca = idadeUsuario === melhorAmigo
+let diferenca = idadeUsuario - melhorAmigo
 console.log(diferenca)
 
 // 2 -
 
-let numeroPar = prompt ("Querido usuario, insira um numero par")
+let numeroPar =Number(prompt("Querido usuario, insira um numero par"))
 let restoDaDivisão = numeroPar % 2
 console.log(restoDaDivisão)
 // Desde numeros primarios como 2 e 4, ate 22 e 44, sempre acaba com resto em 0.
@@ -30,8 +30,7 @@ console.log(restoDaDivisão)
 
 // 3 -
 
-let idadeAnos = prompt ("Querido usuario, pode me dizer sua idade?")
-idadeAnos = Number(idadeAnos)
+let idadeAnos =Number (prompt ("Querido usuario, pode me dizer sua idade?"))
 let idadeMeses = 12
 let idadeDias = 365
 let idadeHoras = 24
@@ -44,18 +43,14 @@ console.log("Sua idade em horas é",resultado3)
 
 // 4 -
 
-let umNumero = prompt ("Mais um numero, please?")
-let doisNumeros = prompt ("Outro numero?")
-umNumero = Number(umNumero)
-doisNumeros = Number(doisNumeros)
+let umNumero =Number(prompt ("Mais um numero, please?"))
+let doisNumeros =Number(prompt ("Outro numero?"))
 let resultado4 = umNumero > doisNumeros
 console.log(resultado4)
 let resultado5 = umNumero === doisNumeros
 console.log(resultado5)
-let divisivel = umNumero * doisNumeros
-console.log(divisivel = true || false)
-let divisivel2 = doisNumeros * umNumero
-console.log(divisivel2 = true || false)
+console.log((umNumero%doisNumeros)===0)
+console.log((doisNumeros%umNumero)===0)
 
 
 
