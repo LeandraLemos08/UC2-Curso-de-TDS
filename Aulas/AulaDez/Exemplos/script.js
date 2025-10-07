@@ -41,6 +41,7 @@ console.log(fraseBunny.includes("batata")) // false
 const novaFrase = fraseBunny.replaceAll("cenoura","batata")
 console.log(novaFrase)
 
+// Arrays
 
-
-
+const listaDeCompras = ["Abacate", "Banana", "Tomate"]
+console.log(listaDeCompras[3])
