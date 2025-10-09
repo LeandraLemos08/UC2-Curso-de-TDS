@@ -27,9 +27,9 @@ console.log("c.", array.length) // c. 11
 let i = 0
 console.log("d.", array[i]) // d. 3
 array[i+1] = 19
-console.log("e.", array) // e. 
+console.log("e.", array) // e. 19
 const valor = array[i+6]
-console.log("f.", valor) // f. 
+console.log("f.", valor) // f. 9
 
 /* Cada uma dessas variaveis esta determinando,
 o valor de de si mesmas (por cada letra) atraves das arrays. */
