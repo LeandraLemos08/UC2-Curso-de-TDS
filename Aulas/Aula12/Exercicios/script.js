@@ -3,7 +3,7 @@
 const frase = prompt ("Digite uma frase")
 console.log(frase.toLocaleUpperCase().replace("A","I"),frase.length)
 
-/* Subi num morro em marrocos | SUBI NUM MORRO EM MIRROCOS -
+/* Subi num morro em marrocos | SUBI NUM ONIBUS EM MIRROCOS -
 26 caracteres, será oque estará impresso no console. */
 
 // 3 -
