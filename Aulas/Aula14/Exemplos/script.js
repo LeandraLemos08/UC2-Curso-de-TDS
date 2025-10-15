@@ -28,3 +28,20 @@ if (condicao1){
 } else if(condicao3){
     console.log("Entrou no else if 2")
 } else console.log("Entrou no else")
+
+let condi1 = true
+let condi2 = false
+
+if (condi1 && condi2){
+    console.log("Executou o if do operador &&")
+} // AND
+
+if (condi1 || condi2){
+    console.log("Executou o if do operador ||")
+} // OR
+
+if (!condi1){
+    console.log("Executou o if do operador !")
+} // NOT
+
+// O único que será executado é OR, pois false && true = false, e no último código, false dá em false.
