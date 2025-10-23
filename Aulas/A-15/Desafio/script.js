@@ -46,6 +46,31 @@ switch (tipoDeJogo && etapaDoJogo) {
     break
  case "inSemiC2":
     console.log(880.00 * 5.65)
+    break
+ case "inSemiC3":
+     console.log(550.00 * 5.65)
+     break
+ case "inSemiC4":
+     console.log(220.00 * 5.65)
+     break
+ case "inDeciC1":
+     console.log(660.00 * 5.65)
+     break
+ case "inDeciC2":
+     console.log(440.00 * 5.65)
+     break
+   case "inDeciC3": 
+     console.log(330.00 * 5.65)
+     break
+ case "inDeciC4":
+     console.log(170.00 * 5.65)
+     break
+ case "inFinalC1":
+     console.log(1980.00 * 5.65)
+     break
+    const inFinalC2 = 1320.00 * 5.65
+    const inFinalC3 = 880.00 * 5.65
+    const inFinalC4 = 330.00 * 5.65
 
 }
 console.log("Olá", nomeCompleto, "você selecionou um jogo de", tipoDeJogo,
