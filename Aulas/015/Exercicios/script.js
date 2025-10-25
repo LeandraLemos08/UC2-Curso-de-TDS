@@ -7,7 +7,7 @@ c) Para números impares */
 /* 
 2 -
 a) Este código serve para encontrar o preço de uma fruta escolhida pelo usuário.
-b) A mensagem impressa será "O preço  da fruta Maçã é R$ 2.25"
+b) A mensagem impressa será "O preço  da fruta Maçã é R$ 5"
 c) Seria "O preço da fruta Pêra é R$ 5" devido ao fato de que o uso de "break" faz distinção entre os itens,
 por isso, o console não para ali e continua para o próximo caso, que vem a ser o Default,
 que executa seu preço e substitui o valor anterior, assim o console.log é executado.
@@ -20,8 +20,8 @@ b) Se fosse dez, a mensagem no terminal seria a de que o número passou no teste
 porém se fosse dez negativo, ele seria menor que zero, logicamente não passando no teste.
 c) Como observei acima, parece que haveria sim um erro no console, visto que, usando os conceitos de bloco ou escopo,
 o usuário insere o número, em seguida é pedido ao console que calcule se esse número é maior que zero, logo
-se o numero for maior o console será executado, uma variavel nova é criado dentro do if após isso, 
-porém deveria ter sido fora por ter sido executada fora do escopo.
+se o numero for maior o console será executado, uma variavel nova é criada dentro do if após isso, 
+porém deveria ter sido fora por ter sido executada fora do escopo. Oque acontece é que como definida no if, fora dele ela não
 */
 
 // 4 -
