@@ -12,7 +12,7 @@ while(estomago<100){ // < pede que seja menor que 100, se adicionado = ao <, com
     estomago = estomago + 10 // diferente de i++, conta apartir do valor i + 10, oque significa, de dez em dez.
 }
 
-/* Definição de variavel */
+/* Definição de variavel - do while */
 
 let c = 1
 do{
@@ -20,19 +20,20 @@ do{
     c++
 }while(c<=6) // o do while executa a acão/teste antes...
 
+// for 
+
 for (let i=0;i<=9;i++){ // começo/iterador,teste/ação,incrementador.
     console.log("O valor de i é:",i)
 }
 
+// for - mas com o arroizinho(array), mostra apenas um i.
 let arrayZinha = [10,4,7,8,200,77,98]
 for (let i=0;i<=6;i++){
     console.log(arrayZinha[i])
 }
-let maiorNumero = 0
-let meuArray = [11,15,18,14,12,13]
-for (let i=0;i<6;i++){
-if(meuArray[i]<maiorNumero){
-    maiorNumero=maiorNumero[i]
-}
-    console.log("O maior numero é:", maiorNumero)
+
+// for of - mostra todos os i
+const numeros = [100, 7,4,8,20,777,2000,1000]
+for(let numero of numeros){
+    console.log("Este é o número:", numero)
 }
