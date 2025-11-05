@@ -16,9 +16,7 @@ let meuArray = [11,15,18,14,12,13]
 for (let i=0;i<6;i++){
 if(meuArray[i]<maiorNumero){
     maiorNumero=maiorNumero[i]
-}
-    console.log("O maior numero é:", maiorNumero)
-}
+}} console.log("O maior numero é:", maiorNumero)
 
 // 2 - For
 let numerosPar = 0
