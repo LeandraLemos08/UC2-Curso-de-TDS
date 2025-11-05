@@ -19,14 +19,3 @@ let Notas
 let somaNotas = 0
 for (let i=0;i<=4;i++){Notas = Number(prompt("Professor, insira a nota de 5 alunos"))
 somaNotas = Notas / 5} console.log("A media das notas é", somaNotas)
-
-// 6 - Jogo da Forca:
-
-
-
-// 7 - Validador de CPF:
-
-
-
-
-

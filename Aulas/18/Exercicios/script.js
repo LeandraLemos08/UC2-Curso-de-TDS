@@ -45,3 +45,18 @@ function TwoNumbers (numb1,numb2){
 }
  const foiSomado = TwoNumbers(6,9)
  console.log(foiSomado)
+
+// 2
+
+const arrayDeNumeros = [8,16,29,32,45,56,78,90]
+function divisão (array){
+ let novaArray = []
+ novaArray.push(array[0] / 2)
+ novaArray.push(array[array.length - 1] / 2)
+ return novaArray
+}
+
+console.log(divisão(arrayDeNumeros));
+
+// Fixação
+
