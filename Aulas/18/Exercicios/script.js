@@ -95,6 +95,7 @@ console.log(`A Criatura 4 é: ${determineOMonstro(false, false, false)}`); */
 // Fixação - interpretação de código.
 // 1 
 // a
+/*
 function minhaFuncao(variavel){
   return variavel * 5
 }
@@ -123,9 +124,114 @@ function eu (){
 eu();
 
 // 2
-function DoisDeles (One,Two){
-  
+// a
+function doisDeles (One,Two){
+  const soma = One + Two
+}
+doisDeles(6,99);
+// b
+function numberNumber (Um,Dois){
+  console.log(Um >=Dois)
+}
+numberNumber(7,77);
+// c
+
+function parisHilton (BOOL){
+ console.log(BOOL % 2 === 0)
+}
+parisHilton(3);
+// d
+
+function miString (perguntinha){
+  perguntinha = prompt("escreva algo")
+ console.log(perguntinha.toUpperCase(),perguntinha.length)
+} 
+ miString("")  */
+// 3
+
+function Sominha(soma1, soma2) {
+  return soma1 + soma2
 }
 
+function Diferinha(soma1,soma2) {
+  return soma1 - soma2
+}
+
+function Multipliquinha(soma1, soma2) {
+  return soma1 * soma2
+}
+
+function Divisinha (soma1,soma2) {
+  return soma1 / soma2
+}
+
+let perguntona = Number(prompt("Um numero"));
+let ostra =Number(prompt("Outro numero"));
+
+let resultadoSoma = Sominha(perguntona, ostra);
+let resultadoSub = Diferinha(perguntona,ostra);
+let resultadoMult = Multipliquinha(perguntona,ostra);
+let resultadoDiv = Divisinha(perguntona,ostra);
+
+console.log("Soma:", resultadoSoma);
+console.log("Subtração:", resultadoSub);
+console.log("Multiplicação:", resultadoMult);
+console.log("Divisão:", resultadoDiv);
 
 
+// Desafio
+// 1
+// a
+const imprimindo = (valor) => {
+  console.log(valor)
+};
+
+// b
+const somandoEImprimindo = (a, b) => {
+  const resultado = a + b 
+  imprimindo(resultado)
+};
+somandoEImprimindo(5, 7);
+
+// 2
+
+function adicionarItem(inventario, item) {
+  if (inventario.length >= 5) {
+    console.log("O inventário está cheio! Não é possível adicionar mais itens.");
+    return inventario;
+  }
+  inventario.push(item);
+  console.log(`Item ${item} adicionado ao inventário.`);
+  return inventario;
+}
+
+function removerItem(inventario, item) {
+  const index = inventario.indexOf(item);
+  if (index === -1) {
+    console.log(`Item ${item} não foi encontrado no inventário.`);
+    return inventario
+  }
+  inventario.splice(index, 1)
+  console.log(`Item ${item} removido do inventário.`);
+  return inventario
+}
+
+function listarItens(inventario) {
+  if (inventario.length === 0) {
+    console.log("O inventário está vazio.")
+  } else {
+    console.log("Itens no inventário:")}
+   for (const item of inventario){
+  }}
+
+
+let inventario = []
+
+adicionarItem(inventario, "Espada");
+adicionarItem(inventario, "Escudo");
+adicionarItem(inventario, "Poção de Cura");
+adicionarItem(inventario, "Arco");
+adicionarItem(inventario, "Flechas");
+
+listarItens(inventario);
+removerItem(inventario, "Poção de Cura");
