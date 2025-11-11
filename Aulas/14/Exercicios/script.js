@@ -1,58 +1,76 @@
-let number1=Number(prompt("Me diga um numero?"))
-let number2=Number(prompt("Outro?"))
-const resultado1=number1===number2
-if(resultado1){
-console.log("Sucesso! Os dois numeros são iguais.")}
+/*
+1 -
+a) o teste que ele realiza é se uma pessoa foi aprovada ou não em um teste que calcula o número escolhido do usuário pelo do sistema.
+b) Pra números cujo resto sempre será zero, ou seja, qualquer número par por dois.
+c) Para números impares */
 
-num1 =Number(prompt("Digite o primeiro número"))
-num2=Number(prompt("Digite o segundo número"))
-if (num1 > num2){
-console.log("O primeiro número é maior que o segundo número.")}
-else if (num1 < num2){
-console.log ("O primeiro número é menor que o segundo número.")}
-else if (num1===num2){
-console.log("O primeiro número é igual ao segundo número.")} 
-else console.log("Não entrou no else")
+/* 
+2 -
+a) Este código serve para encontrar o preço de uma fruta escolhida pelo usuário.
+b) A mensagem impressa será "O preço  da fruta Maçã é R$ 5"
+c) Seria "O preço da fruta Pêra é R$ 5" devido ao fato de que o uso de "break" faz distinção entre os itens,
+por isso, o console não para ali e continua para o próximo caso, que vem a ser o Default,
+que executa seu preço e substitui o valor anterior, assim o console.log é executado.
+*/
 
-let escolhaUmPokemon = prompt ("Usuário, escolha um pokemon")
-switch (escolhaUmPokemon) { 
-    case 'Bulbasaur': 
-        console.log("Planta e Veneno")
-        break
-    case 'Charmander':
-    console.log("Fogo")
-       break
-       case 'Squirtle':
-    console.log("Água")
-        break
-      default:
-    console.log("Pokemon não encontrado")}
+/*
+3 -
+a) A primeira linha cria uma variável Number que em um prompt pede ao usuário que escolha um número 
+b) Se fosse dez, a mensagem no terminal seria a de que o número passou no teste, afinal dez é maior que zero,
+porém se fosse dez negativo, ele seria menor que zero, logicamente não passando no teste.
+c) Como observei acima, parece que haveria sim um erro no console, visto que, usando os conceitos de bloco ou escopo,
+o usuário insere o número, em seguida é pedido ao console que calcule se esse número é maior que zero, logo
+se o numero for maior o console será executado, uma variavel nova é criada dentro do if após isso, 
+porém deveria ter sido fora por ter sido executada fora do escopo. Oque acontece é que como definida no if, fora dele ela não
+*/
 
-let casasDeHogwarts= prompt ("Usuário, escolha uma aluna de Harry Potter")
-switch (casasDeHogwarts) 
-{ case "Fred Weasley": console.log("Grifinória")
-break
- case "Terrence Boot":
-  console.log("Corvinal")
+// 4 -
+
+const idadeMinima = 18
+let podeDirigir =Number (prompt("Usuário, quantos anos você tem?"))
+if (podeDirigir >= idadeMinima) { 
+ console.log("Você pode dirigir")
+} else if (podeDirigir < idadeMinima) {
+ console.log("Você não pode dirigir")}
+
+ // 5 -
+
+ let turnoEstudante1 = prompt("Usuário, me diga em que turno você estuda?") 
+if (turnoEstudante1 = "M") {
+   console.log("Bom dia!")
+} else if (turnoEstudante1 = "V") {
+  console.log("Boa tarde!")
+} else if (turnoEstudante1 = "N") {
+  console.log("Boa noite!")
+} else {
+  console.log ("Horário não encontrado.") 
+}
+
+// 6 - 
+
+let turnoEstudante = prompt ("Usuário, me diga em que turno você estuda?")
+switch (turnoEstudante) {
+ case 'M': 
+   console.log("Bom dia!")
+ break
+ case 'V':
+  console.log("Boa tarde!")
+ break
+ case 'N':
+  console.log("Boa noite!")
   break
-   case "Cedric Diggory":
-  console.log("Lufa-Lufa")
-break
- case "Blaise Zabini":
-  console.log("Sonserina")
-break 
-default:
-console.log("Aluno não encontrado")}
+   default: 
+ console.log ("Horário não encontrado.")
+}
 
-const ensinoMedio= prompt ("Você concluiu o ensino médio?")
-const maiorDeIdade= prompt ("Você é maior de idade?")
-const outraFaculdade = prompt ("Não está cursando outra faculdade?")
-let condição1 = true
-let condição2 = true
-let condição3 = true
-condição1 = ensinoMedio
-condição2 = maiorDeIdade
-condição3 = outraFaculdade 
+// 7 -
 
-if (condição1 && condição2 && condição3) {
-console.log ("Pode entrar na faculdade")}
+let idaNoCine = prompt("Qual é o gênero do filme?")
+let preçoNoCine = Number (prompt("Qual é o preço  do ingresso para este filme?"))
+idaNoCine = "Fantasia" 
+let eMenor = preçoNoCine < 15
+ if (idaNoCine && eMenor) {
+ console.log("Bom filme, miga!")
+} else if (!idaNoCine && !preçoNoCine) {
+ console.log("Escolha outro filme :c")
+}

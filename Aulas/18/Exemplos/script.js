@@ -1,42 +1,40 @@
-// DECLARAÇÃO DA FUNÇÃO
-function imprimirOlamundo(){
-    console.log("Olá mundo!")
+const poeta = {
+ nome: "Dante",
+ sobrenome: "Alighieri",
+ idade: 28,
+   tarefas: ["Escreve poemas", "Reflete sobre questões da vida e do universo"],
+     filosofar:function(){
+        console.log("Vos que entrais, deixas toda a humanidade")
+     }
 }
 
-// Invocação da função.
-imprimirOlamundo();
+// imprimindo
 
-// Com loop
-for(let i=0;i<3;i++){
-    imprimirOlamundo();
+console.log(poeta.nome) // pode ser (poeta["nome"]) tambem.
+console.log(poeta["sobrenome"])
+console.log(poeta.idade)
+
+// mudando | alterando
+
+console.log(poeta.nome = Carlos)
+console.log(poeta.sobrenome = Drumond)
+console.log(poeta.idade = 99)
+
+// Algo do mundo real
+
+const notebook ={
+    tela: 15,
+    processador: "Ryzen",
+    marca: "Lenovo",
+    modelo: "K14",
+      aparencia: ["É quadrado e preto", "Tem muitos botões"]
 }
 
-// Escopo - Escopo da função
-const a = 1 // escopo global
-function imprimeVariavel(){
-    // escopo local
-    const b = 2
-    console.log("A variavel a:", a)
-    console.log("A variavel b:", b)
-}
-// invoca função
-imprimeVariavel();
-console.log("A variavel a:", a)
-console.log("A variavel b:", b) // a variavel não é definida no global, pois foi feita no local, por isso é undefined.
+// é possivel colocar objetos dentro de objetos, arrays dentro de objetos e objetos dentro de arrays,
+const professores =[
+    {nome:"Lucas",modulo:2},
+    {nome:"Dal",modulo:1},
+    {nome:"Valtér",modulo:1}
+]
 
-// Função de retorno - return
-function calculaArea (altura,largura){
-    const area = altura * largura
-    return area
-}
-// Atribui retorno a uma variavel.
-const areaCalculada = calculaArea(2,3)
-// Imprime retorno no console.
-console.log(areaCalculada)
-// mas tambem pode ser feito assim;
-console.log(calculaArea(2,3))
-
-
-
-
-
+console.log("O professor:",professores[0].nome,"deu o modulo",professores[0].modulo)
