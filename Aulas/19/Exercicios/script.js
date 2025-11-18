@@ -7,3 +7,12 @@ let arrayMatriz=[[0,0,0],
 arrayMatriz[1][2]=1
 // c
 console.log(arrayMatriz)
+
+
+// 2
+
+let minhaMatriz= [
+    [3,6,8],
+    [9,12,14],
+    [1,10,16]
+]
