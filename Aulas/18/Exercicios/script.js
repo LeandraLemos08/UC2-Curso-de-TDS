@@ -17,9 +17,9 @@ console.log(oFilme.jaAssistiu)
 console.log(oFilme["publico"])
 
 // 2
-const coleguinha ={
-    nome: "Lucas",
-    idade: 33,
+let coleguinha ={
+    nome: "Julia",
+    idade: 21,
     generoMusica: "Pop"
 }
 
@@ -35,6 +35,18 @@ console.log(oFilme["elenco"[2]]["personagens"[2]])
 console.log(oFilme["elenco"[3]]["personagens"[3]])
 console.log(oFilme)
 
+// 4
+
+let maisColeguinha={
+    ...coleguinha,
+      comidasPreferidas:["alface", "tomate", "açafrão", "azeitona", "paprika"],
+     melhorAmigo:{
+        nome: "Aluisio de Azevedo",
+        idade: 44
+    }}
+ console.log ("O nome da pessoa é", coleguinha.nome, "e suas comidas preferidas são", maisColeguinha.comidasPreferidas[0],maisColeguinha.comidasPreferidas[1],maisColeguinha.comidasPreferidas[2], maisColeguinha.comidasPreferidas[3], maisColeguinha.comidasPreferidas[4], "e", maisColeguinha.comidasPreferidas[5],".", "Seu melhor amigo se chama", maisColeguinha.melhorAmigo.nome, "e tem",maisColeguinha.melhorAmigo.idade, "anos.")
+
+ 
 
 
 
