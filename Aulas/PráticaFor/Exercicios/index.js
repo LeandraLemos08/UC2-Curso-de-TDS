@@ -1,3 +1,5 @@
+// Prática for
+
 // 1 - Contador Simples:
 for(let i=1;i<=10;i++){console.log(i)}
 
@@ -19,3 +21,5 @@ let Notas
 let somaNotas = 0
 for (let i=0;i<=4;i++){Notas = Number(prompt("Professor, insira a nota de 5 alunos"))
 somaNotas = Notas / 5} console.log("A media das notas é", somaNotas)
+
+// Não terminei em aula devido ao horário, retornarei.

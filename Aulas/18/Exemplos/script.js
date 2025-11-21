@@ -1,40 +1,26 @@
-const poeta = {
- nome: "Dante",
- sobrenome: "Alighieri",
- idade: 28,
-   tarefas: ["Escreve poemas", "Reflete sobre questões da vida e do universo"],
-     filosofar:function(){
-        console.log("Vos que entrais, deixas toda a humanidade")
-     }
-}
-
-// imprimindo
-
-console.log(poeta.nome) // pode ser (poeta["nome"]) tambem.
-console.log(poeta["sobrenome"])
-console.log(poeta.idade)
-
-// mudando | alterando
-
-console.log(poeta.nome = Carlos)
-console.log(poeta.sobrenome = Drumond)
-console.log(poeta.idade = 99)
-
-// Algo do mundo real
-
-const notebook ={
-    tela: 15,
-    processador: "Ryzen",
-    marca: "Lenovo",
-    modelo: "K14",
-      aparencia: ["É quadrado e preto", "Tem muitos botões"]
-}
-
-// é possivel colocar objetos dentro de objetos, arrays dentro de objetos e objetos dentro de arrays,
-const professores =[
-    {nome:"Lucas",modulo:2},
-    {nome:"Dal",modulo:1},
-    {nome:"Valtér",modulo:1}
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
 ]
 
-console.log("O professor:",professores[0].nome,"deu o modulo",professores[0].modulo)
+// loop percorre a linha, matriz.lenght retorna 3
+for(let i=0; i < matriz.length;i++){
+    for(let j=0;j<matriz[i].length;j++){
+        console.log(matriz[i][j])
+    } 
+}
+
+let matrizinha = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+let soma=0
+for(let i=0; i < matrizinha.length;i++){
+    for(let j=0;j<matrizinha[i].length;j++){
+        soma+=matrizinha[i][j]
+    } 
+}
+console.log("A soma dos valores da matriz é", soma)
