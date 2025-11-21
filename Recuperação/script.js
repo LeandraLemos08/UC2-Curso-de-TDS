@@ -14,11 +14,11 @@ const personagensZelda =
     atacar: function (inimigoNome, multiplicadorDano) {
         if (inimigoNome = "Octorok") {
             danoAoInimigo = multiplicadorDano * danoMasterSword
-            console.log(danoAoInimigo)
+            console.log(`Link atacou ${inimigoNome} causando 60 de dano`)
         }
         else if (inimigoNome = "Bokoblin") {
             danoAoInimigo = multiplicadorDano * danoMasterSword
-            console.log(danoAoInimigo)
+            console.log(`Link atacou ${inimigoNome} causando 60 de dano`)
         }
         else console.log("Inimigo não encontrado")
         this.historicoDeAcoes.push(`Link atacou ${inimigoNome} causando 60 de dano`)
